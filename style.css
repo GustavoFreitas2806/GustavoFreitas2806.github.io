@@ -8,46 +8,119 @@ body {
     min-height: 100vh;
 }
 
+
 nav {
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+}
+
+nav ul{
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 8px;
+  margin-inline: 16px;
+  margin-block: 0;
+}
+
+nav ul .active {
+  background-color: #004aad;
+}
+
+nav ul li {
+  display: flex;
+  padding-inline: 8px;
+  height: 50px;
+}
+
+
+nav ul li a{
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+nav ul li:hover {
+  background-color: #004aad;
+  transition: all .6s;
+}
+
+.logo {
+  height: 40px;
+  margin: 5px 10px;
+}
+
+.menu {
+  display: none;
+  height: 35px;
+  margin: 7.5px 16px;
+  cursor: pointer;
+}
+
+.adm {
+  color: white;
+  background-color: #004aad;
+  border-radius: 30px;
+  width: 50px;
+  height: 30px;
+  border: none;    
+  cursor: pointer;
+}
+
+.container{
+  width: 50vw;
+  height: 100%;
+  margin-top: 2%;
+}
+
+.titulo{
+  width: 100%;
+  height: 100%;
+  background-color: #004aad;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+h1{
+  font-size: 25px;
+  color: white;
+}   
+
+@media (max-width: 640px){
+  nav ul {
+      display: block;
+      position: absolute;
+      background-color: #dadada;
+      height: 100vh;
+      width: 160px;
+      margin: 50px 0 0 0;
+      padding: 0;
+      right: -160px;
+      transition: all .8s;
   }
-  
-  .logo a {
-    color: #fff;
-    font-size: 24px;
-    text-decoration: none;
+
+  nav ul li {
+      justify-content: end;
   }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
+
+  nav ul li a{
+      color: black;
   }
-  
-  .nav-links li {
-    padding: 0 15px;
+
+  .menu {
+      display: block;
   }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-  }
+}
 
 
 .container {
@@ -123,24 +196,3 @@ nav {
     display: flex;
     justify-content: center;
 }
-
-
-@media screen and (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: #333;
-      width: 100%;
-    }
-  
-    .nav-links li {
-      padding: 15px;
-    }
-  
-    .burger {
-      display: block;
-    }
-  }

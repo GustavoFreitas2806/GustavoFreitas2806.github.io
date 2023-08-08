@@ -1,9 +1,14 @@
 function toggleMenu() {
-    var navLinks = document.getElementById("navLinks");
-    if (navLinks.style.display === "block") {
-      navLinks.style.display = "none";
-    } else {
-      navLinks.style.display = "block";
-    }
+  // Importa o elemento 'ul' do DOM
+  const listaDoMenu = document.querySelector('ul');
+  // Verifica o status atual do atributo active
+  const activeStatus = listaDoMenu.getAttribute('active');
+  // Troca o status para seu contrário
+  if (activeStatus) {
+      listaDoMenu.removeAttribute('active')
+      listaDoMenu.style.transform = 'translateX(160px)';
+  } else {
+      listaDoMenu.setAttribute('active', true)
+      listaDoMenu.style.transform = 'translateX(-160px)';
   }
-  
+}

@@ -11,22 +11,17 @@
 
 <body>
     <header> 
-        <nav>
-            <div class="logo">
-              <a href="#">Logo</a>
-            </div>
-            <ul class="nav-links" id="navLinks">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Serviços</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-            <div class="burger" onclick="toggleMenu()">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </div>
-          </nav>
+      <nav>
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <ul>
+            <li class="active"><a href="index.html">Vitrine</a></li>
+            <li><a href="fornada.php">Fornada</a></li>
+            <form action="code.php" method="POST">
+                <li><a href="../Cliente/index.php"><button class="adm" type="submit" name="sair">Sair</button></a></li>
+            </form>
+        </ul>
+        <img class="menu" src="images/menu.png" alt="Menu" onclick="toggleMenu()" />
+    </nav>
     </header>
 
     <div class="container">
