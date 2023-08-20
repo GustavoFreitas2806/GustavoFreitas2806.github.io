@@ -135,20 +135,21 @@ font-size: 22px;
   display: flex;
 }
 
-.container-info-left {
+.container-about {
   margin-left: 5%;
-  width: 45%;
+  width: 90%;
   height: 100%;
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  margin-right: 5%;
 }
 
 
+/* 
 .container-info-right {
-  margin-right: 5%;
   width: 45%;
   height: 100%;
   background-color: #f8f8f8;
@@ -156,6 +157,28 @@ font-size: 22px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+} */
+
+
+.container-info h1 {
+  margin-top: 8%;
+
+}
+
+.container-background {
+  border-radius: 40px ;
+  width: 95%;
+  height: 60%;
+  background-color: #fc5957;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;     
+}
+
+.card-about{
+  margin: 30px;
+  width: 20vw;
+  background-color: #fafafa;
 }
 
 
