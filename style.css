@@ -131,7 +131,7 @@ font-size: 22px;
 .container-info {
   min-width: 99vw;
   width: 100%;
-  height: 94vh;
+  height: 115vh;
   display: flex;
 }
 
@@ -139,7 +139,7 @@ font-size: 22px;
   margin-left: 5%;
   width: 90%;
   height: 100%;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -166,13 +166,14 @@ font-size: 22px;
 }
 
 .container-background {
-  border-radius: 40px ;
-  width: 95%;
+  border-radius: 10px ;
+  width: 100%;
   height: 60%;
   background-color: #fc5957;
   margin-top: 3%;
   display: flex;
-  justify-content: space-around;     
+  justify-content: space-around;
+  align-items: center;     
 }
 
 .card-about{
