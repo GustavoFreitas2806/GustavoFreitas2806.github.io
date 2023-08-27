@@ -96,7 +96,7 @@ body {
 }
 
 .titulo h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Noto Sans', sans-serif;
   letter-spacing: 2px;
 }
@@ -114,7 +114,7 @@ body {
 }
 
 .texto {
-  margin-right: 38%;
+  margin-right: 28%;
   text-align: justify;
 }
 
