@@ -140,6 +140,7 @@ body {
   display: flex;
 }
 
+
 .container-about {
   margin-left: 5%;
   width: 90%;
@@ -166,6 +167,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  opacity: 0;
 }
 
 .card {
@@ -174,6 +176,12 @@ body {
   height: 100%;
   min-height: 70vh;
 }
+
+.aparecer {
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
 
 
 
@@ -300,7 +308,7 @@ body {
 
 @media (max-width: 1050px) {
   .red-container h1 {
-  font-size: 50px;
+    font-size: 50px;
   }
 
   .container-background {
@@ -316,7 +324,7 @@ body {
 
   }
 
-  
+
 }
 
 
@@ -334,6 +342,9 @@ body {
     margin-top: 7.5vh;
   }
 
+  .aparecer {
+    transition: 0.5s ease-in-out;
+  }
 
 
   .red-container {
@@ -384,7 +395,7 @@ body {
   }
 
   .gray-container img {
-    width: 40%;
+    width: 70%;
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -418,9 +429,6 @@ body {
 
   }
 
-  .card-body {
- 
-  }
 
   #icons-social svg:hover {
     cursor: pointer;
@@ -440,4 +448,27 @@ body {
     margin-top: 10%;
     justify-content: center;
   }
+}
+
+@media (orientation: landscape) {
+  .gray-container img {
+    width: 40%;
+  }
+  
+  .container-about  {
+    margin-top: 45vw;
+ }
+
+  .container-background  {
+    margin-top: 55vw;
+ }
+
+ .card {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+ }
+ 
+
+
 }
