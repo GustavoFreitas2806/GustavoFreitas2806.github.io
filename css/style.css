@@ -450,7 +450,7 @@ body {
   }
 }
 
-@media (orientation: landscape) {
+@media (max-width: 1050px) and (orientation: landscape) {
   .gray-container img {
     width: 40%;
   }
