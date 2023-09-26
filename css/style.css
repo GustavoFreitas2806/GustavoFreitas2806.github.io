@@ -184,7 +184,6 @@ body {
 
 
 
-
 .card p {
   font-size: 1rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
@@ -198,7 +197,6 @@ body {
 .card-text {
   margin-top: 5%;
 }
-
 
 #btn-card {
   background-color: #fc5957;
@@ -448,26 +446,48 @@ body {
     margin-top: 10%;
     justify-content: center;
   }
+
+  .gray-container p {
+    font-size: 28px;
+  }
 }
 
-@media (max-width: 1050px) and (orientation: landscape) {
-  .gray-container img {
-    width: 40%;
+@media (max-width: 850px) and (orientation: landscape) {
+  .gray-container {
+    width: 90vw;
+    height: 580vh;
   }
   
+  .gray-container img {
+    width: 40vw
+  }
+
   .container-about  {
-    margin-top: 45vw;
+    margin-top: 52.4vw;
  }
 
   .container-background  {
-    margin-top: 55vw;
+    margin-top: 55vw; 
  }
 
  .card {
-  width: 100%;
-  min-height: 80vh;
-  display: flex;
+    width: 50vw;
+    min-height: 80vh;
+    display: flex;
  }
+
+ .card p {
+  font-size: 12px;
+ }
+
+ .card button {
+  width: 20%;
+}
+
+ .card h5 {
+  font-size: 2vw;
+}
+
  
 
 
